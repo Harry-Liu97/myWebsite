@@ -1,0 +1,151 @@
+.headerContainer {
+    width: 100vw;
+    min-height: 80px;
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.headerContainer.dayMode {
+    background-image: linear-gradient(to right, #800080, #ffa500);
+}
+
+.headerContainer.nightMode {
+    background-image: linear-gradient(to right, #202544, #3d3073);
+} 
+
+.slogan {
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    font-style: italic;
+}
+
+.slogan h1 {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    font-size: 2rem;
+}
+
+.slogan h2 {
+    font-size: 1.5rem;
+}
+
+.slogan h1, .slogan h2 {
+    display: inline-block;
+    color: #ffffff;
+}
+
+.myNav {
+    padding: 0;
+    margin: 0;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myList {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.myList li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.myList li a:hover {
+    border-width: 2px;
+    border-color: #ccc;
+    border-style: double;
+}
+
+.myList li a:active {
+    transform: translateY(2px);
+    border-width: 2px;
+    border-color: #ccc;
+    border-style: double;
+}
+
+#nightSwitch1 {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#nightSwitch1 i {
+    width: 24px;
+    height: 24px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#sunIcon1 {
+    display: none;
+}
+
+#nightSwitch1 i:hover {
+    color: gray;
+}
+
+#nightSwitch1 i:active {
+    transform: translateY(2px);
+}
+
+.dropdown.menuNight {
+    display: none;
+}
+
+.dropdown-toggle {
+    color: white;
+}
+
+#dropdownIcon i {
+    color: white;
+    font-size: 1.5rem;
+}
+
+#nightSwitch2 {
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+#nightSwitch2 i {
+    width: 24px;
+    height: 24px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#sunIcon2 {
+    display: none;
+}
+
+#nightSwitch2 i:hover {
+    color: gray;
+}
+
+#nightSwitch2 i:active {
+    transform: translateY(2px);
+}
